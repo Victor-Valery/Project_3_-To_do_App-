@@ -1,12 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>To do Application</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+        integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
 </head>
+
 <body>
-    
+
+    <div class="todo-container">
+
+        <h1>To do List</h1>
+
+        <div class="new-task">
+            <div class="new-task-heading">
+                <h4>New task</h4>
+            </div>
+            <div class="input-body">
+                <input value"" id="input" type="text" name="task" placeholder="Add task here...">
+                <button class="add-button">+</button>
+            </div>
+        </div>
+
+        <div class="tos">
+            <div class="task-list">
+                <h4>Your things to do</h4>
+                <button class="delete-button">Delete All</button>
+            </div>
+            <div class="tasks">
+                <ul>
+
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="./add.js"></script>
+
 </body>
+
 </html>
