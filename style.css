@@ -1,74 +1,142 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 body {
-    font-family: "Rajdhani", sans-serif;
+  font-family: "Rajdhani", sans-serif;
 }
-.todo-container{
-    border-color: black;
-    width: 70%;
-    display: flex;
-    flex-direction: column;
-    margin: auto;
-    padding-top: 1rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
+.todo-container {
+  border-color: black;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  padding-top: 1rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
-h1{
-    text-align: center;
-    margin-bottom: 1rem;
-    color: #2f3542;
+h1 {
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #2f3542;
 }
-.new-task{
-    border: 1px solid red;
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 1rem;
+.new-task {
+  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
 }
-.new-task-heading{
-    padding: 1rem;
-    font-size: 1.5rem;
-    font-weight: 400;
-    color: gray;
-    background-color: white;
+.new-task-heading {
+  padding: 1rem;
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: gray;
+  background-color: white;
 }
-.input-body{
-    padding: 1rem;
-    display: flex;
+.input-body {
+  padding: 1rem;
+  display: flex;
 }
-#input{
-    width: 100%;
-    border: 1px solid gray;
-    border-radius: 5px;
-    padding: 5px;
-    border-color: gray;
+#input {
+  width: 100%;
+  border: 1px solid gray;
+  border-radius: 5px;
+  padding: 5px;
+  border-color: gray;
 }
-#input:focus{
-    outline-color: green;
+#input:focus {
+  outline-color: green;
 }
-.add-button{
-    background-color: green;
-    color: white;
-    padding: 5px 3rem;
-    border: none;
-    font-size: 1.5rem;
-    font-weight: 700;
-    cursor: pointer;
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
+.add-button {
+  background-color: green;
+  color: white;
+  padding: 5px 3rem;
+  border: none;
+  font-size: 1.5rem;
+  font-weight: 700;
+  cursor: pointer;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
 }
-.add-button:hover{
-    background-color: green;
-    color: white;
+.add-button:hover {
+  background-color: green;
+  color: white;
 }
-.task-list{
-    padding: 1rem;
-    display: flex;
-    justify-content: space-between;
-    border: 1px solid white;
-    font-size: 1.5rem;
-    font-weight: 600;
-    background-color: white;
+.task-list {
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid white;
+  font-size: 1.5rem;
+  font-weight: 600;
+  background-color: white;
+}
+.task-item {
+  padding: 0.9rem;
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid grey;
+  font-size: 1.5rem;
+  font-weight: 600;
+  background-color: white;
+  color: green;
+}
+.delete-item {
+  color: rosybrown;
+  border: none;
+  font-size: 1.7rem;
+  font-weight: bold;
+  background-color: transparent;
+  cursor: pointer;
+}
+.delete-item:hover {
+  color: gray;
+}
+.delete-task {
+  text-decoration: line-through;
+  color: gray;
+}
+.task-list h4 {
+  align-self: center;
+  color: gray;
+}
+.delete-button {
+  align-self: center;
+  background-color: rosybrown;
+  color: white;
+  padding: 10px 1.3rem;
+  border: none;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.delete-button:hover {
+  background-color: rosybrown;
+}
+
+@media (max-width: 600px) {
+    html{
+        font-size: 14px;
+    }
+    .todo-container{
+        width: 90%;
+    }
+}
+@media (max-width: 400px) {
+    html{
+        font-size: 13px;
+    }
+    .todo-container{
+        width: 100%;
+    }
+}
+@media (max-width: 300px) {
+    html{
+        font-size: 11px;
+    }
+    .todo-container{
+        width: 100%;
+    }
 }
