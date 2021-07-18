@@ -5,9 +5,12 @@
 }
 body {
   font-family: "Rajdhani", sans-serif;
+  background-image: url(./images/1.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .todo-container {
-  border-color: black;
   width: 70%;
   display: flex;
   flex-direction: column;
@@ -19,20 +22,25 @@ body {
 h1 {
   text-align: center;
   margin-bottom: 1rem;
-  color: #2f3542;
+  color: #3033ec;
+  background-color: rgb(250, 231, 181);
+  border: 3px solid rgb(0, 0, 0);
+  border-radius: 30px;
 }
 .new-task {
-  border: 1px solid red;
+  border: 3px solid rgb(0, 0, 0);
   display: flex;
   flex-direction: column;
   margin-bottom: 1rem;
+  border-radius: 30px;
 }
 .new-task-heading {
-  padding: 1rem;
+  padding: 0.9rem;
   font-size: 1.5rem;
   font-weight: 400;
-  color: gray;
-  background-color: white;
+  color: rgb(0, 0, 0);
+  background-color: rgb(250, 231, 181);
+  border-radius: 30px;
 }
 .input-body {
   padding: 1rem;
@@ -40,50 +48,50 @@ h1 {
 }
 #input {
   width: 100%;
-  border: 1px solid gray;
-  border-radius: 5px;
+  border: 3px solid rgb(46, 236, 21);
+  border-radius: 30px;
   padding: 5px;
-  border-color: gray;
 }
 #input:focus {
-  outline-color: green;
+  outline-color: #2ecc71;
 }
-.add-button {
-  background-color: green;
-  color: white;
+.add-btn {
+  background-color: #2ecc71;
+  color: #ffff;
   padding: 5px 3rem;
-  border: none;
+  border: 3px solid rgb(45, 235, 7);
   font-size: 1.5rem;
   font-weight: 700;
   cursor: pointer;
-  border-top-right-radius: 5px;
-  border-bottom-right-radius: 5px;
+  border-radius: 30px;
 }
-.add-button:hover {
-  background-color: green;
-  color: white;
+.add-btn:hover {
+  background-color: #23b35f;
+  color: #ffff;
 }
 .task-list {
-  padding: 1rem;
+  padding: 0.9rem;
   display: flex;
   justify-content: space-between;
-  border: 1px solid white;
+  border: 3px solid rgb(0, 0, 0);
   font-size: 1.5rem;
   font-weight: 600;
-  background-color: white;
+  background-color: rgb(250, 231, 181);
+  border-radius: 30px;
 }
 .task-item {
   padding: 0.9rem;
   display: flex;
   justify-content: space-between;
-  border: 1px solid grey;
+  border: 1px solid rgb(134, 132, 132, 0.3);
   font-size: 1.5rem;
   font-weight: 600;
-  background-color: white;
-  color: green;
+  background-color: rgb(236, 231, 231);
+  color: #2ecc71;
+  border-radius: 30px;
 }
 .delete-item {
-  color: rosybrown;
+  color: #eb3b5a;
   border: none;
   font-size: 1.7rem;
   font-weight: bold;
@@ -91,52 +99,52 @@ h1 {
   cursor: pointer;
 }
 .delete-item:hover {
-  color: gray;
+  color: rgb(134, 132, 132, 0.3);
 }
 .delete-task {
   text-decoration: line-through;
-  color: gray;
+  color: rgb(134, 132, 132, 0.3);
 }
 .task-list h4 {
   align-self: center;
-  color: gray;
+  color: #030303;
 }
-.delete-button {
+.delete-btn {
   align-self: center;
-  background-color: rosybrown;
-  color: white;
+  background-color: #eb3b5a;
+  color: #ffff;
   padding: 10px 1.3rem;
   border: none;
   font-size: 1rem;
   font-weight: 700;
   cursor: pointer;
-  border-radius: 5px;
+  border-radius: 30px;
 }
-.delete-button:hover {
-  background-color: rosybrown;
+.delete-btn:hover {
+  background-color: #eb1e43;
 }
 
 @media (max-width: 600px) {
-    html{
-        font-size: 14px;
-    }
-    .todo-container{
-        width: 90%;
-    }
+  html {
+    font-size: 14px;
+  }
+  .todo-container {
+    width: 90%;
+  }
 }
 @media (max-width: 400px) {
-    html{
-        font-size: 13px;
-    }
-    .todo-container{
-        width: 100%;
-    }
+  html {
+    font-size: 13px;
+  }
+  .todo-container {
+    width: 100%;
+  }
 }
 @media (max-width: 300px) {
-    html{
-        font-size: 11px;
-    }
-    .todo-container{
-        width: 100%;
-    }
+  html {
+    font-size: 11px;
+  }
+  .todo-container {
+    width: 100%;
+  }
 }
